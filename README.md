@@ -16,10 +16,10 @@ You simply need to add this to the extension list in your `phpspec.yml`, and the
 
 ```yaml
 extensions:
-    - PhpSpecExtension\MatcherLoader\Extension
+  - PhpSpecExtension\MatcherLoader\Extension
 matchers:
-    - Acme\Foo\CustomMatcher
-    - # etc..
+  - Acme\Foo\CustomMatcher
+  - # etc..
 ```
 
 The listed matchers must either implement `PhpSpec\Matcher\MatcherInterface` or
@@ -35,14 +35,14 @@ use PhpSpec\Matcher\MatchersProviderInterface;
 
 class HtmlMatcher implements MatchersProviderInterface
 {
-  public function getMatchers()
-  {
-      return [
-          'beValidJson' => function ($subject) {
-              json_decode($subject);
-              return json_last_error() === 0;
-          }
-      ];
-  }
+    public function getMatchers()
+    {
+        return [
+            'beValidJson' => function ($subject) {
+                json_decode($subject);
+                return json_last_error() === 0;
+            }
+        ];
+    }
 }
 ```
