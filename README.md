@@ -33,7 +33,7 @@ namespace Acme\Foo;
 
 use PhpSpec\Matcher\MatchersProviderInterface;
 
-class HtmlMatcher implements MatchersProviderInterface
+class JsonMatcher implements MatchersProviderInterface
 {
     public function getMatchers()
     {
