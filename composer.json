@@ -1,0 +1,27 @@
+{
+    "name": "nick-jones/phpspec-matcher-loader-extension",
+
+    "description": "Allows custom phpspec matchers to be registered via configuration",
+
+    "authors": [{
+        "name": "Nicholas Jones"
+    }],
+
+    "license": "MIT",
+
+    "require": {
+        "php": ">=5.4.0",
+        "phpspec/phpspec": "~2.0"
+    },
+
+    "require-dev": {
+        "behat/behat": "~3.0",
+        "bossa/phpspec2-expect": "~1.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "PhpSpecExtension\\MatcherLoader\\": "lib/PhpSpecExtension/MatcherLoader/"
+        }
+    }
+}
