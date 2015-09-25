@@ -21,7 +21,7 @@
 
     "autoload": {
         "psr-4": {
-            "PhpSpecExtension\\MatcherLoader\\": "lib/PhpSpecExtension/MatcherLoader/"
+            "PhpSpecExtension\\MatcherLoader\\": "lib/MatcherLoader/"
         }
     }
 }
