@@ -1,5 +1,7 @@
 # PhpSpec Matcher Loader Extension
 
+[![Build Status](https://travis-ci.org/nick-jones/phpspec-matcher-loader-extension.svg?branch=master)](https://travis-ci.org/nick-jones/phpspec-matcher-loader-extension)
+
 When using [phpspec](https://github.com/phpspec/phpspec) it is possible to create custom matchers by leveraging the
 [inline matching](http://www.phpspec.net/en/latest/cookbook/matchers.html#inline-matcher) capability of
 `ObjectBehavior`. This, whilst very simple and handy, does have some limitations. Should a particular matcher or set of
