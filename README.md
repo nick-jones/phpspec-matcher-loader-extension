@@ -11,22 +11,33 @@ to that class, and are not easily shared, published, or categorised.
 
 This very basic extension allows you to list matchers to be loaded within your `phpspec.yml` configuration file.
 
-## Usage
+## Installation
 
-You simply need to add this to the extension list in your `phpspec.yml`, and then list your matchers under a options key
-`matchers` for registration. For example:
+You can install this extension via [composer](http://getcomposer.org):
+
+`composer require nick-jones/phpspec-matcher-loader-extension`
+
+You will then need to list configure this as an extension within your `phpspec.yml`:
 
 ```yaml
 extensions:
   - PhpSpecExtension\MatcherLoader\Extension
+```
+
+## Usage
+
+You can list any number of custom phpspec matchers under the `matcher` option key within your `phpspec.yml`, for
+example:
+
+```yaml
 matchers:
   - Acme\Foo\CustomMatcher
   - # etc..
 ```
 
-The listed matchers must either implement `PhpSpec\Matcher\MatcherInterface` or
+All listed matchers must either implement `PhpSpec\Matcher\MatcherInterface` or
 `PhpSpec\Matcher\MatchersProviderInterface`. The latter may be familiar, as `ObjectBehavior` implements it. Remember
-that the primary difference is that the registered matchers become available in *all* specifications. An example:
+that the primary difference is that the registered matchers become available in *all* specifications. A matcher example:
 
 ```php
 <?php
