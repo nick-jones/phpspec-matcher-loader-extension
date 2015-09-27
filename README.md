@@ -59,3 +59,17 @@ class JsonMatcher implements MatchersProviderInterface
     }
 }
 ```
+
+If you wish to place your matcher classes under a projects `spec` directory you will need to ensure that they can
+be loaded. One way to achieve this is to list them to the
+[`autoload-dev.files`](https://getcomposer.org/doc/04-schema.md#files) section of your `composer.json`. For convenience
+purposes you could add the entire `spec\<Project>` namespace for autoload
+[via PSR-4](https://getcomposer.org/doc/04-schema.md#psr-4). For example:
+
+```json
+"autoload-dev": {
+  "psr-4": {
+    "spec\\Acme\\": "spec/Acme"
+  }
+}
+```
