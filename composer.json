@@ -3,6 +3,8 @@
 
     "description": "Allows custom phpspec matchers to be registered via configuration",
 
+    "keywords": ["phpspec", "extension", "custom", "matcher", "loader"],
+
     "authors": [{
         "name": "Nicholas Jones"
     }],
