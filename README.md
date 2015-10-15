@@ -1,6 +1,8 @@
 # PhpSpec Matcher Loader Extension
 
-[![Build Status](https://travis-ci.org/nick-jones/phpspec-matcher-loader-extension.svg?branch=master)](https://travis-ci.org/nick-jones/phpspec-matcher-loader-extension)
+[![Travis](https://img.shields.io/travis/nick-jones/phpspec-matcher-loader-extension.svg?style=flat-square)](https://travis-ci.org/nick-jones/phpspec-matcher-loader-extension)
+[![Packagist](https://img.shields.io/packagist/v/nick-jones/phpspec-matcher-loader-extension.svg)](https://packagist.org/packages/nick-jones/phpspec-matcher-loader-extension)
+[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.4-8892BF.svg?style=flat-square)](https://php.net/)
 
 When using [phpspec](https://github.com/phpspec/phpspec) it is possible to create custom matchers by leveraging the
 [inline matching](http://www.phpspec.net/en/latest/cookbook/matchers.html#inline-matcher) capability of
