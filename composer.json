@@ -13,12 +13,12 @@
 
     "require": {
         "php": ">=5.4.0",
-        "phpspec/phpspec": "~2.0"
+        "phpspec/phpspec": "^2.0"
     },
 
     "require-dev": {
-        "behat/behat": "~3.0",
-        "bossa/phpspec2-expect": "~1.0"
+        "behat/behat": "^3.0",
+        "bossa/phpspec2-expect": "^1.0"
     },
 
     "autoload": {
