@@ -17,7 +17,7 @@ This very basic extension allows you to list matchers to be loaded within your `
 
 You can install this extension via [composer](http://getcomposer.org):
 
-`composer require nick-jones/phpspec-matcher-loader-extension`
+`composer require --dev nick-jones/phpspec-matcher-loader-extension`
 
 You will then need to list configure this as an extension within your `phpspec.yml`:
 
